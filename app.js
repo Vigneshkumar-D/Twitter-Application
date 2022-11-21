@@ -1,19 +1,23 @@
 const express = require("express");
 const app = express();
-const path = require("path");
-var format = require("date-fns/format");
 
 const { open } = require("sqlite");
 const sqlite3 = require("sqlite3");
 
+const jwt = require("jsonwebtoken");
 app.use(express.json());
 const bcrypt = require("bcrypt");
-const jwt = require("jsonwebtoken");
 
+
+var isValid = require("date-fns/isValid");
+var format = require("date-fns/format");
+
+const path = require("path");
 const dbPath = path.join(__dirname, "twitterClone.db");
 let db = null;
 
-// initialize Db And Server
+
+// initialize Database And Server
 const initializeDbAndServer = async () => {
   try {
     db = await open({
@@ -27,7 +31,7 @@ const initializeDbAndServer = async () => {
     console.log(`DB Error: ${error.message}`);
     process.exit(1);
   }
-};
+}
 initializeDbAndServer();
 
 // Authenticate JWT token Middleware Function
@@ -52,7 +56,7 @@ const authenticateToken = (request, response, next) => {
       }
     });
   }
-};
+}
 
 // New User Register API
 app.post("/register/", async (request, response) => {
@@ -183,7 +187,7 @@ app.delete("/tweets/:tweetId/", authenticateToken, async (request, response) => 
       response.status(401);
       response.send("Invalid Request");
     }
-  });
+});
 
 // Get Followers API
 app.get("/user/following/", authenticateToken, async (request, response) => {
@@ -207,7 +211,7 @@ app.get("/user/following/", authenticateToken, async (request, response) => {
   response.send(dbResponse);
 });
 
-//Get Tweets  FeedAPI
+// Get Tweets  Feed API
 app.get("/user/tweets/feed/", authenticateToken, async (request, response) => {
     const { username } = request;
 
@@ -301,7 +305,7 @@ app.get("/tweets/:tweetId/", authenticateToken, async(request, response) => {
      }
 });
 
-//Get Likes API
+// Get Likes API
 app.get("/tweets/:tweetId/likes/", authenticateToken, async(request, response) => {
 
 const { username } = request;
@@ -384,8 +388,7 @@ app.get("/tweets/:tweetId/replies/", authenticateToken, async (request, response
    }    
 }); 
 
-// Get Logged User Tweets
-
+// Get Logged User Tweet
 app.get("/user/tweets/", authenticateToken, async (request, response) => {
     const { username } = request;
 
@@ -423,6 +426,5 @@ app.get("/tweets/",  async (request, response) => {
   const dbResponse = await db.all(selectTweet);
   response.send(dbResponse);
 });
-
 
 module.exports = app;

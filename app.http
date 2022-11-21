@@ -17,20 +17,16 @@ Content-Type: application/json
   "password":"biden@123"
 }
 
-
 ###
 GET http://localhost:3000/user/tweets/feed/
-Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
 
 ###
 GET http://localhost:3000/user/following/
-Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
 
 ### 
 DELETE http://localhost:3000/tweets/27/
-Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
 
 ####
@@ -47,7 +43,7 @@ GET http://localhost:3000/user/followers/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
 
 ### 
-GET http://localhost:3000/tweets/1/
+GET http://localhost:3000/tweets/9/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
 
 ###
@@ -55,7 +51,7 @@ GET http://localhost:3000/tweets/6/replies/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
 
 ###
-GET http://localhost:3000/tweets/9/likes/
+GET http://localhost:3000/tweets/3/likes/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
 
 ### 
@@ -64,10 +60,4 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZ
 
 ### For my Reference
 GET http://localhost:3000/tweets/
-Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
-
-### For my Reference
-GET  http://localhost:3000/userprofile/
-Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
