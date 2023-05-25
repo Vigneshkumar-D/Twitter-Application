@@ -43,15 +43,15 @@ GET http://localhost:3000/user/followers/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
 
 ### 
-GET http://localhost:3000/tweets/9/
+GET http://localhost:3000/tweets/2/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
 
 ###
-GET http://localhost:3000/tweets/6/replies/
+GET http://localhost:3000/tweets/5/replies/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
 
 ###
-GET http://localhost:3000/tweets/3/likes/
+GET http://localhost:3000/tweets/19/likes/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
 
 ### 
@@ -59,5 +59,5 @@ GET http://localhost:3000/user/tweets/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
 
 ### For my Reference
-GET http://localhost:3000/tweets/
+GET http://localhost:3000/users/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkpvZUJpZGVuIiwiaWF0IjoxNjY5MDI0NTI4fQ.fud-xwbiVHRZby2wJxNNWuPVataoZSyZaMaZKKs7PbA
