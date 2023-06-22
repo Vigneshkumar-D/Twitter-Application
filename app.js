@@ -34,8 +34,8 @@ initializeDbAndServer();
 const authenticateToken = (request, response, next) => {
   let jwtToken;
   const authHeader = request.headers["authorization"];
-
-  if (authHeader !== undefined) {
+undefined
+  if (authHeader !== ) {
     jwtToken = authHeader.split(" ")[1];
   }
   if (authHeader === undefined) {
