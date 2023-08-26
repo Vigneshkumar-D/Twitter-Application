@@ -35,7 +35,7 @@ const authenticateToken = (request, response, next) => {
   let jwtToken;
   const authHeader = request.headers["authorization"];
 undefined
-  if (authHeader !== ) {
+  if (authHeader) {
     jwtToken = authHeader.split(" ")[1];
   }
   if (authHeader === undefined) {
